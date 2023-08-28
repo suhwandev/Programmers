@@ -23,11 +23,18 @@ package programmers_Lv0;
  */
 public class ReverseArray {
   public int[] solution(int[] num_list) {
-    int a = num_list.length;
-    int[] arr = new int[a];
-    for (int i = 0; i < num_list.length; i++) {
-      arr[a - 1 - i] = num_list[i];
+    //num_list 배열의 길이만큼 받는 int a 초기화
+    int length = num_list.length;
+
+    //arr 배열 생성 및 초기화
+    int[] arr = new int[length];
+
+    //arr의 'length-1-i'는 arr의 끝 인덱스 ~ 첫 인덱스까지 for문으로 돈다
+    for (int i = 0; i < length; i++) {
+      //arr에 num_list의 값을 인덱스 순으로 대입하면 num_list의 역순으로 대입됨 
+      arr[length - 1 - i] = num_list[i];
     }
+    // return type이 int[]
     return arr;
   }
 }
