@@ -1,7 +1,5 @@
 package programmers_Lv0;
 
-import netscape.security.ForbiddenTargetException;
-
 import java.util.Arrays;
 
 /**
