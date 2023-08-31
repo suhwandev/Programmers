@@ -31,7 +31,7 @@ public class EvenOddNums {
     int evenCounter = 0;
     int oddCounter = 0;
 
-    // for로 num_list의 배열을 훑어서 각각의 값의 홀짝을 판별함
+    // for로 num_list의 배열을 훑어서 각각의 값의 홀짝을 판별
     for (int i = 0; i < num_list.length; i++) {
       if (num_list[i] % 2 == 0) {
         evenCounter++;
